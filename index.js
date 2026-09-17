@@ -41,7 +41,7 @@ async function sendMessage(token, userId, message) {
 
     console.log(`Sent message from : ${response.status}`);
   } catch (err) {
-    console.error(`❌ Error sending message with token : ${err.response?.data?.message || err.message}`);
+    console.error(` Error sending message with token : ${err.response?.data?.message || err.message}`);
   }
 }
 
